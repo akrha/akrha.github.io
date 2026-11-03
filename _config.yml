@@ -7,8 +7,7 @@ remote_theme: "jekyll/minima@c6e74bb"
 #
 title: akrha's page
 
-# author:
-   name: @akrha
+author: "@akrha"
 
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
