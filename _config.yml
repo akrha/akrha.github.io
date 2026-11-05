@@ -17,3 +17,8 @@ minima:
 exclude:
   - README.md
   - compose.yaml
+
+# minima テーマ側の Sass 非推奨警告を抑制（テーマが Dart Sass 3 対応するまで）
+sass:
+  quiet_deps: true
+  silence_deprecations: [import, global-builtin, color-functions]

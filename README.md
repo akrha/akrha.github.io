@@ -29,6 +29,7 @@ docker compose up
 
 ### うまく動かないとき
 
+- **ブラウザが空白ページ / `NS_ERROR_NET_EMPTY_RESPONSE` になる**: まだ起動途中。`docker compose logs -f` で `Server running...` が出るまで待ってからリロードする（初回は gem のインストールで 1〜2 分かかる）
 - **`_config.yml` を変えたのに反映されない**: `_config.yml` は自動再読み込みされないので、`docker compose restart` する
 - **ポート 4000 / 35729 が使用中**: 別の `jekyll serve` などを止めるか、`compose.yaml` の `ports` の左側を変える
 - **Linux で `_site/` が root 所有になる**: `sudo rm -rf _site .jekyll-cache` で消してよい（どちらも `.gitignore` 済み）
