@@ -1,0 +1,17 @@
+# ローカルプレビュー用: docker compose up → http://localhost:4000
+services:
+  jekyll:
+    image: ruby:3.4.12
+    working_dir: /srv/jekyll
+    command: >
+      sh -c "bundle install &&
+             bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling"
+    ports:
+      - "4000:4000"   # サイト
+      - "35729:35729" # LiveReload
+    volumes:
+      - .:/srv/jekyll
+      - bundle:/usr/local/bundle # gemをキャッシュして2回目以降の起動を速くする
+
+volumes:
+  bundle:
