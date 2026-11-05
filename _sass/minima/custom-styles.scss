@@ -1,0 +1,11 @@
+// minima のスタイル上書き用フック
+
+// 「書いたもの」の折りたたみ
+details {
+  margin-bottom: 15px;
+
+  > summary {
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+}
