@@ -2,16 +2,12 @@
 
 remote_theme: "jekyll/minima"
 
-title: "@akrha's page"
+title: "akrha — Backend / 情シス Engineer"
 
 author: "@akrha"
 
 minima:
   skin: auto
-  social_links:
-    - { title: GitHub,     icon: github, url: "https://github.com/akrha" }
-    - { title: Qiita,      icon: rss,    url: "https://qiita.com/akrha" }
-    - { title: はてなブログ, icon: rss,    url: "https://akrha.hatenablog.com/" }
   hide_site_feed_link: true
 
 exclude:
